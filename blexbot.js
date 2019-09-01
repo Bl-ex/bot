@@ -285,7 +285,7 @@ try{
 
     var loadChat = function(cb) {
         if (!cb) cb = function() {};
-        $.get('https://code.niceatc.dev/@/lang.php', function(json) {
+        $.get('https://raw.githack.com/brazilex/bot/master/lang.php', function(json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== 'undefined') {
                 langIndex = json;
@@ -593,7 +593,7 @@ try{
 	var server_users = [];
 
 	var loadServerUsersList = function() {
-        return $.getJSON("https://code.niceatc.dev/@/entrada.php", l => {
+        return $.getJSON("https://raw.githack.com/brazilex/bot/master/entrada.php", l => {
             server_users = l;
         })
 		.error(() => {
@@ -660,9 +660,9 @@ try{
         status: false,
         name: 'BlexBot',
         loggedInID: null,
-        scriptLink: 'https://code.niceatc.dev/@/loader.php',
+        scriptLink: 'https://raw.githack.com/brazilex/bot/master/loader.php',
         cmdLink: '',
-        chatLink: 'https://code.niceatc.dev/@/lang.php',
+        chatLink: 'https://raw.githack.com/brazilex/bot/master/lang.php',
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -670,8 +670,8 @@ try{
         settings: {
             botName: 'BlexBot',
             language: 'portuguese',
-            chatLink: 'https://code.niceatc.dev/@/lang.php',
-            scriptLink: 'https://code.niceatc.dev/@/loader.php',
+            chatLink: 'https://raw.githack.com/brazilex/bot/master/lang.php',
+            scriptLink: 'https://raw.githack.com/brazilex/bot/master/loader.php',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -7410,6 +7410,6 @@ try{
     };
 
     loadChat(basicBot.startup);
-    $.getScript("https://code.niceatc.dev/@/ext.php");
-    $.getScript("https://code.niceatc.dev/@/IA.js");
+    $.getScript("https://raw.githack.com/brazilex/bot/master/ext.php");
+    $.getScript("https://raw.githack.com/brazilex/bot/master/IA.js");
 }).call(this);

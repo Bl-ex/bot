@@ -21,10 +21,10 @@
         "vip_expires": "9999-12-31"
     },
     {
-        "name": "Denovuan",
-        "id": "3432252",
-        "welcome": "",
-        "birthday": "2000-11-09",
+        "name": "Lobo Maki Alpha ♥",
+        "id": "47024210",
+        "welcome": "Sexy wolf entered the room",
+        "birthday": "1995-04-21",
         "vip_expires": "9999-12-31"
     }
 ]

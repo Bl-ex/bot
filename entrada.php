@@ -26,5 +26,5 @@
         "welcome": "Sexy wolf entered the room",
         "birthday": "1995-04-21",
         "vip_expires": "9999-12-31"
-    }
+    },
 ]
